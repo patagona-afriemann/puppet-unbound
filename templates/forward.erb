@@ -7,6 +7,9 @@ forward-zone:
 <% elsif @address != '' -%>
   forward-addr: <%= @address %>
 <% end -%>
+<% elsif @host != '' -%>
+  forward-host: <%= @host %>
+<% end -%>
 <% if @forward_first != 'no' -%>
   forward-first: <%= @forward_first %>
 <% end -%>

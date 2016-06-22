@@ -23,6 +23,7 @@
 #
 define unbound::forward (
   $address,
+  $host          = '',
   $zone          = $name,
   $forward_first = 'no',
   $config_file   = $unbound::params::config_file,
